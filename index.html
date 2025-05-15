@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="product-section">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="images/black.jpeg" alt="Black T-Shirt" id="mainImage">
+                </div>
+                <div class="thumbnails">
+                    <img src="assests/black.jpeg" alt="Black T-Shirt" class="active">
+                    <img src="assests/red.webp" alt="Red T-Shirt">
+                    <img src="assests/blue.jpeg" alt="Blue T-Shirt">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <h1>Premium Cotton T-Shirt</h1>
+                <div class="price">$29.99</div>
+                <div class="variants">
+                    <div class="color-swatches">
+                        <div class="swatch active" style="background: #000;" data-color="Black" data-image="assests/black.jpeg"></div>
+                        <div class="swatch" style="background: #ff0000;" data-color="Red" data-image="assests/red.webp"></div>
+                        <div class="swatch" style="background: #0000ff;" data-color="Blue" data-image="assests/blue.jpeg"></div>
+                    </div>
+                    <div class="size-options">
+                        <button class="size-btn active" data-size="S">S</button>
+                        <button class="size-btn" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                    </div>
+                    <button class="size-chart-btn">Size Chart</button>
+                    <button class="compare-btn">Compare Colours</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="info">Product Info</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping</button>
+                    </div>
+                    <div class="tab-content active" id="description">
+                        <p>This premium cotton t-shirt is made from 100% organic cotton, offering a soft and comfortable fit for everyday wear.</p>
+                    </div>
+                    <div class="tab-content" id="info">
+                        <p>Material: 100% Organic Cotton<br>Care: Machine washable<br>Fit: Regular</p>
+                    </div>
+                    <div class="tab-content" id="shipping">
+                        <p>Free shipping on orders over $50. Delivered within 3-5 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pair Well With -->
+        <section class="pair-well">
+            <h2>Pair Well With</h2>
+            <div class="carousel-controls">
+                <button class="carousel-arrow carousel-arrow-left" aria-label="Previous item">←</button>
+                <div class="pair-carousel">
+                    <div class="pair-card">
+                        <img src="assests/jeans.jpeg" alt="Blue Jeans">
+                        <h3>Blue Denim Jeans</h3>
+                        <div class="price">$49.99</div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="assests/jacket.jpeg" alt="Black Jacket">
+                        <h3>Black Leather Jacket</h3>
+                        <div class="price">$89.99</div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="assests/sneakers.jpg" alt="White Sneakers">
+                        <h3>White Sneakers</h3>
+                        <div class="price">$59.99</div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="assests/bjeans.webp" alt="Blue Jeans">
+                        <h3>Black Denim Jeans</h3>
+                        <div class="price">$49.99</div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="assests/wjacket.jpeg" alt="Black Jacket">
+                        <h3>White Leather Jacket</h3>
+                        <div class="price">$89.99</div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="assests/bsneakers.jpeg" alt="White Sneakers">
+                        <h3>Black Sneakers</h3>
+                        <div class="price">$59.99</div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <button class="carousel-arrow carousel-arrow-right" aria-label="Next item">→</button>
+            </div>
+        </section>
+
+        <!-- Product Bundle -->
+        <section class="bundle">
+            <h2>Buy These Together</h2>
+            <div class="bundle-items">
+                <div class="bundle-item">
+                    <img src="assests/black.jpeg" alt="Black T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <div class="price">$29.99</div>
+                </div>
+                <div class="bundle-item">
+                    <img src="assests/jeans.jpeg" alt="Blue Jeans">
+                    <h3>Jeans</h3>
+                    <div class="price">$49.99</div>
+                </div>
+                <div class="bundle-item">
+                    <img src="assests/red.webp" alt="Black T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <div class="price">$29.99</div>
+                </div>
+                <div class="bundle-item">
+                    <img src="assests/bjeans.webp" alt="Blue Jeans">
+                    <h3>Jeans</h3>
+                    <div class="price">$49.99</div>
+                </div>
+                <div class="bundle-item">
+                    <img src="assests/sneakers.jpg" alt="White Sneakers">
+                    <h3>White Sneakers</h3>
+                    <div class="price">$59.99</div>
+                </div>
+            </div>
+            <div class="bundle-total">Total: $79.98</div>
+            <button class="add-to-cart">Add Bundle to Cart</button>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related">
+            <h2>Related Products</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <div class="badge">New</div>
+                    <img src="assests/ghood.jpeg" alt="Gray Hoodie">
+                    <h3>Cozy Hoodie</h3>
+                    <div class="price">$39.99</div>
+                </div>
+                <div class="related-card">
+                    <img src="assests/check.jpg" alt="Checkered Shirt">
+                    <h3>Flannel Shirt</h3>
+                    <div class="price">$34.99</div>
+                </div>
+                <div class="related-card">
+                    <div class="badge">Popular</div>
+                    <img src="assests/wool.jpeg" alt="Navy Sweater">
+                    <h3>Wool Sweater</h3>
+                    <div class="price">$44.99</div>
+                </div>
+                <div class="related-card">
+                    <img src="assests/cargo.jpeg" alt="Khaki Shorts">
+                    <h3>Cargo Shorts</h3>
+                    <div class="price">$24.99</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Size Chart Modal -->
+    <div class="modal" id="sizeChartModal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Size Chart</h2>
+            <table class="size-chart-table">
+                <tr>
+                    <th>Size</th>
+                    <th>Chest</th>
+                    <th>Length</th>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>36-38"</td>
+                    <td>27"</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>38-40"</td>
+                    <td>28"</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>40-42"</td>
+                    <td>29"</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Compare Colours Modal -->
+    <div class="modal" id="compareModal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Compare Colours</h2>
+            <p>Click to select two or more colours to compare</p>
+            <div class="color-swatches compare-swatches">
+                <div class="swatch" style="background: #000;" data-color="Black" data-image="assests/black.jpeg"></div>
+                <div class="swatch" style="background: #ff0000;" data-color="Red" data-image="assests/red.webp"></div>
+                <div class="swatch" style="background: #0000ff;" data-color="Blue" data-image="assests/blue.jpeg"></div>
+            </div>
+            <div class="selected-colors">
+                <h3>Selected Colours:</h3>
+                <div class="selected-swatches"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
