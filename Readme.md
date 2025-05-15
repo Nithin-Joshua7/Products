@@ -76,7 +76,7 @@ project/
 │   ├── wjacket.jpeg
 │   ├── bsneakers.jpeg
 │   ├── fallback.jpeg
-└── product-page.html
+└── index.html
 
 Steps
 
@@ -104,7 +104,7 @@ Option 1: VS Code Live Server:
 Open the project folder in VS Code.
 Install the "Live Server" extension.
 Right-click product-page.html → "Open with Live Server".
-Browser opens at http://localhost:5500/product-page.html.
+Browser opens at http://localhost:5500/index.html.
 
 
 
